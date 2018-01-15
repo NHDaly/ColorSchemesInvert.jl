@@ -4,8 +4,9 @@ VERSION >= v"0.4" && __precompile__()
 
 module ColorSchemesInvert
 
-using ColorTypes, ColorSchemes
+using ColorTypes, ColorSchemes, Colors
 
+export invert, convertToScheme
 
 """
     invert(cscheme, c)
@@ -24,6 +25,7 @@ Compute the percentage value of the colors in cscheme.
 ```
 """
 function invert(cscheme::Vector{C}, c, rangescale :: Tuple{Number, Number}=(0.0, 1.0)) where {C<:Colorant}
+    if length(cscheme) <= 1 ; throw(InexactError()) ; end
     cdiffs = map(c_i->colordiff(promote(c,c_i)...), cscheme)
     closest = indmin(cdiffs)
     left = right = 0;
@@ -35,9 +37,10 @@ function invert(cscheme::Vector{C}, c, rangescale :: Tuple{Number, Number}=(0.0,
         right = max(closest, next_closest)
     end
 
-    left
-    right
-    v = left + ( cdiffs[left] / (cdiffs[left] + cdiffs[right]))
+    v = left
+    if cdiffs[left] != cdiffs[right] ;  # Prevents divide by 0.
+        v += ( cdiffs[left] / (cdiffs[left] + cdiffs[right]))
+     end
     return ColorSchemes.remap(v, 1, length(cscheme), rangescale...)
 end
 
