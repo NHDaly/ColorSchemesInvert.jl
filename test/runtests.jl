@@ -24,3 +24,19 @@ cs = [RGB(0,0,0)];
 #  If this behavior ever changes, so should `invert`.)
 @test_throws InexactError get(cs, 1.0, (1,1))
 end
+
+
+@testset "convertToScheme tests" begin
+# Add color to a grayscale image.
+red_cs = linspace(RGB(0,0,0), RGB(1,0,0))
+gray_img = linspace(RGB(0,0,0), RGB(1,1,1))
+new_img = convertToScheme(red_cs, gray_img)
+@test all(.≈(new_img, red_cs, atol=0.5))  # This is broken.. It should be way more specific. See next test.
+
+# Should be able to uniquely match each increasing color with the next
+# increasing color in the new scale.
+red_cs = [linspace(RGB(0,0,0), RGB(1,0,0))...]
+blue_scale_img = [linspace(RGB(0,0,0), RGB(0,0,1))...]
+new_img = convertToScheme(red_cs, blue_scale_img)
+@test_broken unique(new_img) == new_img
+end
