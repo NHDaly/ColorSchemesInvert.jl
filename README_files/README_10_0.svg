@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="180.0mm" height="25.0mm"
+     shape-rendering="crispEdges">
+<rect x="0.0mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#2E4EEE" stroke="none" />
+<rect x="13.846153846153847mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#4F71F0" stroke="none" />
+<rect x="27.692307692307693mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#7491F2" stroke="none" />
+<rect x="41.53846153846154mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#A4B8F6" stroke="none" />
+<rect x="55.38461538461539mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#D1DBFB" stroke="none" />
+<rect x="69.23076923076923mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#EFF3FD" stroke="none" />
+<rect x="83.07692307692308mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#FBFCE8" stroke="none" />
+<rect x="96.92307692307693mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#FEFDBA" stroke="none" />
+<rect x="110.76923076923077mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#FDFC6C" stroke="none" />
+<rect x="124.61538461538461mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#F4DC48" stroke="none" />
+<rect x="138.46153846153845mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#E7A83E" stroke="none" />
+<rect x="152.30769230769232mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#DB7334" stroke="none" />
+<rect x="166.15384615384616mm" y="0.0mm"
+      width="12.846153846153847mm" height="24.0mm"
+      fill="#D0222A" stroke="none" />
+</svg>
