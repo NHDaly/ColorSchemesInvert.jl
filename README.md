@@ -1,5 +1,10 @@
 
 # ColorSchemesInvert
+------------------------------
+**This repo is deprecated and should not be used.** It only ever existed as an example for a PR to [JuliaGraphics/ColorSchemes.jl](http://github.com/JuliaGraphics/ColorSchemes.jl).
+
+It has been fully merged into ColorSchemes.jl in [JuliaGraphics/ColorSchemes.jl#11](https://github.com/JuliaGraphics/ColorSchemes.jl/pull/11). You can read about how to use this feature, here:
+<br>https://juliagraphics.github.io/ColorSchemes.jl/v3/finding
 
 ------------------------------
 
